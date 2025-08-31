@@ -1,0 +1,14 @@
+[Unit]
+Description=Auto Dark Mode
+
+[Service]
+ExecStart=sh -c "                                                             \
+    hour=$(date +%%H);                                                        \
+    if [ $hour -ge 6 ] && [ $hour -lt 18 ]; then                              \
+        gsettings set org.gnome.desktop.interface color-scheme 'default';     \
+    else                                                                      \
+        gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'; \
+    fi                                                                        \
+"
+Type=oneshot
+Environment=DISPLAY=:0 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus

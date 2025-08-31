@@ -1,0 +1,11 @@
+[Unit]
+Description=Auto Dark Mode
+
+[Timer]
+OnCalendar=*-*-* 06:00:00
+OnCalendar=*-*-* 18:00:00
+Unit=auto-dark-mode.service
+Persistent=True
+
+[Install]
+WantedBy=timers.target
