@@ -1,1 +1,1 @@
-sudo pacman -Rns gnome-pkgbuild
+sudo pacman -Rns paru-pkgbuild

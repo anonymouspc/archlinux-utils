@@ -1,2 +1,2 @@
 makepkg -si
-sudo pacman -D --asdeps paru debugedit fakeroot
+sudo pacman -D --asdeps paru debugedit fakeroot pkgconf
