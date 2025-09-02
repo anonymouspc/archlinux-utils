@@ -1,2 +1,3 @@
-systemctl --user disable auto-dark-mode.timer
-rm -f ~/.config/systemd/user/auto-dark-mode.*
+systemctl --user disable gnome-auto-dark-mode.timer
+rm ~/.config/systemd/user/gnome-auto-dark-mode.timer
+rm ~/.config/systemd/user/gnome-auto-dark-mode.service

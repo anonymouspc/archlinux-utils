@@ -1,5 +1,5 @@
 [Unit]
-Description=Auto Dark Mode
+Description=Gnome Auto Dark Mode
 
 [Service]
 ExecStart=sh -c "                                                             \
